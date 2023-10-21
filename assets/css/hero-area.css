@@ -39,7 +39,60 @@
     background-color: #FFFFFF;
     color: #AFCA15;
 }
+/*======================================
+   Start hero-area-cards
+========================================*/
+.hero-area-cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20em;
+    height: 400px;
+}
 
+.cards-feature{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    width: 230px;
+    height: 280px;
+    background-size: 100% auto;
+}
+
+.cards-feature h2, p{
+    color: #FFFFFF;
+}
+
+.cards-feature:hover{
+    height: 355px;
+}
+
+
+#quem-somos-card1 {
+    background: linear-gradient(180deg, rgba(31, 164, 201, 0.8) 0%, rgba(22, 89, 134, 0.8) 100%), url(../images/hero-area-banner1.png);
+    position: relative;
+    background-size: cover; /* Adjust this value if needed */
+    background-position: center center; /* Center the background image both horizontally and vertically */
+}
+
+#quem-somos-card2{
+    background: linear-gradient(180deg, rgba(31, 164, 201, 0.8) 0%, rgba(22, 89, 134, 0.8) 100%), url(../images/hero-area-banner1.png);
+    position: relative;
+    background-size: cover; /* Adjust this value if needed */
+    background-position: center center; /* Center the background image both horizontally and vertically */
+}
+#quem-somos-card3{
+    background: linear-gradient(180deg, rgba(31, 164, 201, 0.8) 0%, rgba(22, 89, 134, 0.8) 100%), url(../images/hero-area-banner3.png);
+    position: relative;
+    background-size: cover; /* Adjust this value if needed */
+    background-position: center center; /* Center the background image both horizontally and vertically */
+}
+
+/*======================================
+   End hero-area-cards
+========================================*/
 
 @media screen and (max-width:1350px){
     .totem-hero-img{
