@@ -2528,6 +2528,55 @@ ol {
   color: white;
 }
 
+/* Responsividade para dispositivos com largura de tela até 768px (tablets e dispositivos móveis) */
+@media (max-width: 1154px) {
+  .card-area {
+      height: 80vh; /* Reduzindo a altura do fundo azul */
+  }
+
+  .main-title {
+      top: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1.5em; /* Diminuindo o tamanho da fonte */
+  }
+
+  .nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  .left-btn {
+      left: 5%;
+  }
+
+  .right-btn {
+      right: 5%;
+  }
+
+  .cards-container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      top: 50%; /* Centralizando verticalmente */
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+
+  .card {
+      width: 70%; /* Reduzindo a largura para que não toque nos botões */
+      margin: 0 auto;
+  }
+
+  /* Escondendo todos os cards exceto o primeiro */
+  .card:not(:first-child) {
+      display: none;
+  }
+}
+
+
 /* .card-counter {
   display: none; 
   position: absolute;

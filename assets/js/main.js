@@ -114,40 +114,41 @@ Author: GrayGrids
     // let cardIndex = 0;
 
     //card logic buttons    
-    let cardsGroup1 = `
+    // Array com os grupos de cards
+let cardsGroups = [
+    `
     <div class="card">
-                    <img src="assets/images/android.png" alt="Android Icon">
-                    <h2>Android</h2>
-                    <p>Nosso player é projetado para Android e usa o melhor de cada tecnologia</p>
-                </div>
-                <div class="card">
-                    <img src="assets/images/html.png" alt="HTML Icon">
-                    <h2>HTML 5</h2>
-                    <p>Todos os modelos são construídos utilizando HTML5 e CSS3.</p>
-                </div>
-                <div class="card">
-                    <img src="assets/images/conteudo.png" alt="Conteúdo Icon">
-                    <h2>Conteudo pronto</h2>
-                    <p>Disponibilizamos também vários conteúdos prontos, além de pontos de extensão.</p>
-                </div>
-                <div class="card">
-                    <img src="assets/images/circulo.png" alt="Sincronização Icon">
-                    <h2>Auto sincronização</h2>
-                    <p>O conteúdo dos terminais é sincronizado automaticamente com o servidor.</p>
-                </div>
-                <div class="card">
-                    <img src="assets/images/lapis.png" alt="Personalização Icon">
-                    <h2>Personalisável</h2>
-                    <p>Criamos os templates para você.</p>
-                </div>
-                <div class="card">
-                    <img src="assets/images/agenda.png" alt="Agenda Icon">
-                    <h2>Agendamento</h2>
-                    <p>Escolha o período, dias da semana e horários em que a mídia deve ser exibida.</p>
-                </div>
-`;
-
-let cardsGroup2 = `
+        <img src="assets/images/android.png" alt="Android Icon">
+        <h2>Android</h2>
+        <p>Nosso player é projetado para Android e usa o melhor de cada tecnologia</p>
+    </div>
+    <div class="card">
+        <img src="assets/images/html.png" alt="HTML Icon">
+        <h2>HTML 5</h2>
+        <p>Todos os modelos são construídos utilizando HTML5 e CSS3.</p>
+    </div>
+    <div class="card">
+        <img src="assets/images/conteudo.png" alt="Conteúdo Icon">
+        <h2>Conteudo pronto</h2>
+        <p>Disponibilizamos também vários conteúdos prontos, além de pontos de extensão.</p>
+    </div>
+    <div class="card">
+        <img src="assets/images/circulo.png" alt="Sincronização Icon">
+        <h2>Auto sincronização</h2>
+        <p>O conteúdo dos terminais é sincronizado automaticamente com o servidor.</p>
+    </div>
+    <div class="card">
+        <img src="assets/images/lapis.png" alt="Personalização Icon">
+        <h2>Personalisável</h2>
+        <p>Criamos os templates para você.</p>
+    </div>
+    <div class="card">
+        <img src="assets/images/agenda.png" alt="Agenda Icon">
+        <h2>Agendamento</h2>
+        <p>Escolha o período, dias da semana e horários em que a mídia deve ser exibida.</p>
+    </div>
+    `,
+    `
     <div class="card">
         <img src="path/to/your/image1.png" alt="Placeholder Icon">
         <h2>Titulo 1</h2>
@@ -178,64 +179,63 @@ let cardsGroup2 = `
         <h2>Titulo 6</h2>
         <p>Descrição do card 6...</p>
     </div>
-`;
+    `
+];
 
-    let currentCardsGroup = 1;
+let currentGroupIndex = 0;
 
-    let rightBtn = document.querySelector(".right-btn");
-    let leftBtn = document.querySelector(".left-btn");
-    let cardsContainer = document.querySelector(".cards-container");
+let rightBtn = document.querySelector(".right-btn");
+let leftBtn = document.querySelector(".left-btn");
+let cardsContainer = document.querySelector(".cards-container");
 
-    // Função para atualizar o estado dos botões
-    function updateButtonsState() {
-        leftBtn.disabled = (currentCardsGroup === 1);
-        rightBtn.disabled = (currentCardsGroup === 2);
+// Função para exibir um grupo de cards
+function showCardGroup(index) {
+    cardsContainer.innerHTML = cardsGroups[index];
+}
+
+// Função para atualizar o estado dos botões
+function updateButtonsState() {
+    leftBtn.disabled = (currentGroupIndex === 0);
+    rightBtn.disabled = (currentGroupIndex === cardsGroups.length - 1);
+}
+
+rightBtn.addEventListener("click", () => {
+    if (window.innerWidth <= 1154) { // Se estiver em formato mobile
+        currentGroupIndex++;
+        showCardGroup(currentGroupIndex);
+        updateButtonsState();
+    } else {
+        // Lógica para desktop
+        if (currentGroupIndex < cardsGroups.length - 1) {
+            currentGroupIndex++;
+            showCardGroup(currentGroupIndex);
+            updateButtonsState();
+        }
     }
+});
 
-    rightBtn.addEventListener("click", () => {
-        if (currentCardsGroup === 1) {
-            fadeAndRenderCards(cardsGroup2, () => {
-                currentCardsGroup = 2;
-                updateButtonsState();
-            });
+leftBtn.addEventListener("click", () => {
+    if (window.innerWidth <= 1154) { // Se estiver em formato mobile
+        if (currentGroupIndex === 0) {
+            currentGroupIndex = cardsGroups.length - 1;
+        } else {
+            currentGroupIndex--;
         }
-    });
-
-    leftBtn.addEventListener("click", () => {
-        if (currentCardsGroup === 2) {
-            fadeAndRenderCards(cardsGroup1, () => {
-                currentCardsGroup = 1;
-                updateButtonsState();
-            });
+        showCardGroup(currentGroupIndex);
+        updateButtonsState();
+    } else {
+        // Lógica para desktop
+        if (currentGroupIndex > 0) {
+            currentGroupIndex--;
+            showCardGroup(currentGroupIndex);
+            updateButtonsState();
         }
-    });
+    }
+});
 
-    function fadeAndRenderCards(cardsHTML, callback) {
-        cardsContainer.classList.add('fading-out');
-        
-        // Garante que o conteúdo só será trocado após a animação de fade out terminar
-        cardsContainer.addEventListener('animationend', function handler() {
-            cardsContainer.removeEventListener('animationend', handler); // Remove o listener após ser chamado
-            cardsContainer.innerHTML = cardsHTML;
-            cardsContainer.classList.remove('fading-out');
-            cardsContainer.classList.add('fading-in');
-    
-            // Agora vamos adicionar outro listener para quando a animação de fade in terminar
-            cardsContainer.addEventListener('animationend', function handler() {
-                cardsContainer.removeEventListener('animationend', handler);
-                cardsContainer.classList.remove('fading-in');
-                if (callback) callback();
-            });
-        });
-    }    
+// Atualizar o estado inicial dos botões ao carregar a página
+updateButtonsState();
 
-    // Atualizar o estado inicial dos botões ao carregar a página
-    updateButtonsState();
-
-
-    console.log(rightBtn); // Deve mostrar o elemento do botão direito
-    console.log(leftBtn); // Deve mostrar o elemento do botão esquerdo
-    console.log(cardsContainer); // Deve mostrar o contêiner dos cards
 
 
 })();
