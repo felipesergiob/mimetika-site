@@ -1,5 +1,5 @@
 footer{
-    background-color:#0C70B8;
+    background-color:white;
 }
 
 
@@ -21,7 +21,7 @@ footer{
 
 .footer-informacoes p, a{
     text-decoration: none;
-    color: #ffffff;
+    color: #095A94;
 }
 
 @media screen and (max-width:913px){
@@ -30,6 +30,13 @@ footer{
     }
 
     .footer-informacoes p{
-        justify-content: center;
+    display: none;
     }
+    
 }
+
+.btn-excecao {
+    color: white; /* ou qualquer cor original do botão */
+}
+
+

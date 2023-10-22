@@ -2026,7 +2026,8 @@ ol {
   background: #095A94;
   background-image: url(https://i.postimg.cc/zB1J68SY/TEXTURA.png);
   background-size: auto;
-  height: 90vh; 
+  height: 90vh;
+  border-radius: 0 0 25px 25px;
   
 }
 
@@ -2406,6 +2407,7 @@ ol {
   background-image: url(https://i.postimg.cc/zB1J68SY/TEXTURA.png);
   background-size: auto;
   height: 120vh;
+  border-radius: 25px;
 }
 
 .main-title {
@@ -2514,6 +2516,7 @@ ol {
 #home .card img {
   width: 30%; 
   margin-bottom: 1em;
+  
 }
 
 
@@ -2539,6 +2542,7 @@ ol {
       left: 50%;
       transform: translateX(-50%);
       font-size: 1.5em; /* Diminuindo o tamanho da fonte */
+      font-size: 1.3em;
   }
 
   .nav-btn {
@@ -2571,7 +2575,7 @@ ol {
   }
 
   /* Escondendo todos os cards exceto o primeiro */
-  .card:not(:first-child) {
+  .cards-container .card:not(:first-child) {
       display: none;
   }
 }
@@ -2587,6 +2591,27 @@ ol {
   font-size: 1.5em;
   z-index: 1;
 } */
+
+/* Por padrão, o contador estará oculto */
+.card-counter {
+  display: none;
+}
+
+/* Para dispositivos com largura de tela até 1154px (formato mobile) */
+@media (max-width: 1154px) {
+  /* Mostrando o contador apenas no formato mobile */
+  .card-counter {
+    display: block;
+    position: absolute;
+    bottom: 10%;  /* Posicionado abaixo do card */
+    left: 50%;
+    transform: translateX(-50%);
+    color: gray;
+    font-size: 1.5em;
+    z-index: 2; /* Garante que o contador apareça acima de outros elementos */
+  }
+}
+
 
 
 /*=============================
@@ -2829,6 +2854,10 @@ ol {
   margin-left: 80px;
 }
 
+.hero-area-adjusted {
+  /* Arredonda apenas as bordas debaixo */
+  border-radius: 25px;
+}
 
 @media screen and (max-width: 768px) {
   #home .img-fluid {
@@ -2842,6 +2871,10 @@ ol {
   }
   .row.align-items-start {
       flex-direction: column;
+  }
+
+  #home .custom-card .card-text ,  #home .custom-card .card-title{
+    font-size: smaller;
   }
 }
 
@@ -3101,7 +3134,7 @@ ol {
 	Footer CSS
 ========================================*/
 .footer {
-  background-color: #0B68AB;
+  background-color: white;
   position: relative;
 }
 
@@ -3129,8 +3162,9 @@ ol {
   .footer-inside img {
     margin-bottom: 20px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 50%;
+    margin-right: 50%;
+    
   }
 
   .footer-lista {
@@ -3166,7 +3200,7 @@ ol {
 }
 
 .footer .single-footer.f-about p {
-  color: #D2D6DC;
+  color: #0B68AB;
   margin-top: 20px;
   font-size: 14px;
 }
@@ -3185,16 +3219,13 @@ ol {
 }
 
 .footer .single-footer.f-about .social li a {
-  color: #D2D6DC;
+  color: #0B68AB;
   font-size: 15px;
 }
 
-.footer .single-footer.f-about .social li a:hover {
-  color: #420947;
-}
 
 .footer .single-footer.f-about .copyright-text {
-  color: #D2D6DC;
+  color: #0B68AB;
   font-size: 14px;
   margin-top: 40px;
 }
@@ -3211,19 +3242,17 @@ ol {
 .footer .single-footer.f-link li a {
   font-size: 15px;
   font-weight: 400;
-  color: #D2D6DC;
+  color: #0B68AB;
 }
 
-.footer .single-footer.f-link li a:hover {
-  color: #420947;
-}
+
 
 .footer .single-footer h3 {
   font-size: 18px;
   font-weight: 600;
   display: block;
   margin-bottom: 35px;
-  color: #D2D6DC;
+  color: #0B68AB;
 }
 
 .footer .footer-newsletter {
@@ -3241,7 +3270,7 @@ ol {
 }
 
 .footer .footer-newsletter .title h3 {
-  color: #D2D6DC;
+  color: #0B68AB;
   font-size: 18px;
   display: block;
   margin-bottom: 10px;
@@ -3251,7 +3280,7 @@ ol {
 
 .footer .footer-newsletter .title p {
   font-size: 15px;
-  color: #D2D6DC;
+  color: #0B68AB;
 }
 
 .footer .footer-newsletter .title p a {
@@ -3342,3 +3371,4 @@ ol {
 .pastel-green{
   border-radius: 50%;
 }
+

@@ -114,128 +114,116 @@ Author: GrayGrids
     // let cardIndex = 0;
 
     //card logic buttons    
-    // Array com os grupos de cards
-let cardsGroups = [
-    `
-    <div class="card">
-        <img src="assets/images/android.png" alt="Android Icon">
-        <h2>Android</h2>
-        <p>Nosso player é projetado para Android e usa o melhor de cada tecnologia</p>
-    </div>
-    <div class="card">
-        <img src="assets/images/html.png" alt="HTML Icon">
-        <h2>HTML 5</h2>
-        <p>Todos os modelos são construídos utilizando HTML5 e CSS3.</p>
-    </div>
-    <div class="card">
-        <img src="assets/images/conteudo.png" alt="Conteúdo Icon">
-        <h2>Conteudo pronto</h2>
-        <p>Disponibilizamos também vários conteúdos prontos, além de pontos de extensão.</p>
-    </div>
-    <div class="card">
-        <img src="assets/images/circulo.png" alt="Sincronização Icon">
-        <h2>Auto sincronização</h2>
-        <p>O conteúdo dos terminais é sincronizado automaticamente com o servidor.</p>
-    </div>
-    <div class="card">
-        <img src="assets/images/lapis.png" alt="Personalização Icon">
-        <h2>Personalisável</h2>
-        <p>Criamos os templates para você.</p>
-    </div>
-    <div class="card">
-        <img src="assets/images/agenda.png" alt="Agenda Icon">
-        <h2>Agendamento</h2>
-        <p>Escolha o período, dias da semana e horários em que a mídia deve ser exibida.</p>
-    </div>
-    `,
-    `
-    <div class="card">
-        <img src="path/to/your/image1.png" alt="Placeholder Icon">
-        <h2>Titulo 1</h2>
-        <p>Descrição do card 1...</p>
-    </div>
-    <div class="card">
-        <img src="path/to/your/image2.png" alt="Placeholder Icon">
-        <h2>Titulo 2</h2>
-        <p>Descrição do card 2...</p>
-    </div>
-    <div class="card">
-        <img src="path/to/your/image3.png" alt="Placeholder Icon">
-        <h2>Titulo 3</h2>
-        <p>Descrição do card 3...</p>
-    </div>
-    <div class="card">
-        <img src="path/to/your/image4.png" alt="Placeholder Icon">
-        <h2>Titulo 4</h2>
-        <p>Descrição do card 4...</p>
-    </div>
-    <div class="card">
-        <img src="path/to/your/image5.png" alt="Placeholder Icon">
-        <h2>Titulo 5</h2>
-        <p>Descrição do card 5...</p>
-    </div>
-    <div class="card">
-        <img src="path/to/your/image6.png" alt="Placeholder Icon">
-        <h2>Titulo 6</h2>
-        <p>Descrição do card 6...</p>
-    </div>
-    `
-];
-
-let currentGroupIndex = 0;
-
-let rightBtn = document.querySelector(".right-btn");
-let leftBtn = document.querySelector(".left-btn");
-let cardsContainer = document.querySelector(".cards-container");
-
-// Função para exibir um grupo de cards
-function showCardGroup(index) {
-    cardsContainer.innerHTML = cardsGroups[index];
-}
-
-// Função para atualizar o estado dos botões
-function updateButtonsState() {
-    leftBtn.disabled = (currentGroupIndex === 0);
-    rightBtn.disabled = (currentGroupIndex === cardsGroups.length - 1);
-}
-
-rightBtn.addEventListener("click", () => {
-    if (window.innerWidth <= 1154) { // Se estiver em formato mobile
-        currentGroupIndex++;
-        showCardGroup(currentGroupIndex);
+    let cards = [
+        `<div class="card">
+            <img src="assets/images/android.png" alt="Android Icon">
+            <h2>Android</h2>
+            <p>Nosso player é projetado para Android e usa o melhor de cada tecnologia</p>
+        </div>`,
+        `<div class="card">
+            <img src="assets/images/html.png" alt="HTML Icon">
+            <h2>HTML 5</h2>
+            <p>Todos os modelos são construídos utilizando HTML5 e CSS3.</p>
+        </div>`,
+        `<div class="card">
+            <img src="assets/images/conteudo.png" alt="Conteúdo Icon">
+            <h2>Conteudo pronto</h2>
+            <p>Disponibilizamos também vários conteúdos prontos, além de pontos de extensão.</p>
+        </div>`,
+        `<div class="card">
+            <img src="assets/images/circulo.png" alt="Sincronização Icon">
+            <h2>Auto sincronização</h2>
+            <p>O conteúdo dos terminais é sincronizado automaticamente com o servidor.</p>
+        </div>`,
+        `<div class="card">
+            <img src="assets/images/lapis.png" alt="Personalização Icon">
+            <h2>Personalisável</h2>
+            <p>Criamos os templates para você.</p>
+        </div>`,
+        `<div class="card">
+            <img src="assets/images/agenda.png" alt="Agenda Icon">
+            <h2>Agendamento</h2>
+            <p>Escolha o período, dias da semana e horários em que a mídia deve ser exibida.</p>
+        </div>`,
+        `<div class="card">
+            <img src="assets/images/nada.png" alt="imagem">
+            <h2>titulo do card</h2>
+            <p>conteudo do card</p>
+        </div>`,
+        `<div class="card">
+            <img src="assets/images/nada.png" alt="imagem">
+            <h2>titulo do card</h2>
+            <p>conteudo do card</p>
+        </div>`,
+        `<div class="card">
+            <img src="assets/images/nada.png" alt="imagem">
+            <h2>titulo do card</h2>
+            <p>conteudo do card</p>
+        </div>`,
+        `<div class="card">
+            <img src="assets/images/nada.png" alt="imagem">
+            <h2>titulo do card</h2>
+            <p>conteudo do card</p>
+        </div>`,
+        `<div class="card">
+            <img src="assets/images/nada.png" alt="imagem">
+            <h2>titulo do card</h2>
+            <p>conteudo do card</p>
+        </div>`,
+        `<div class="card">
+            <img src="assets/images/nada.png" alt="imagem">
+            <h2>titulo do card</h2>
+            <p>conteudo do card</p>
+        </div>`,
+        
+    
+    ];
+    
+    let startIndex = 0;
+    let cardsToShow = window.innerWidth <= 1154 ? 1 : 6;
+    
+    let rightBtn = document.querySelector(".right-btn");
+    let leftBtn = document.querySelector(".left-btn");
+    let cardsContainer = document.querySelector(".cards-container");
+    let cardCounter = document.querySelector(".card-counter"); // Selecione o contador
+    
+    function showCards() {
+        let cardsHtml = "";
+        for (let i = startIndex; i < startIndex + cardsToShow && i < cards.length; i++) {
+            cardsHtml += cards[i];
+        }
+        cardsContainer.innerHTML = cardsHtml;
         updateButtonsState();
-    } else {
-        // Lógica para desktop
-        if (currentGroupIndex < cardsGroups.length - 1) {
-            currentGroupIndex++;
-            showCardGroup(currentGroupIndex);
-            updateButtonsState();
+        updateCardCounter(); // Atualize o contador toda vez que os cards forem atualizados
+    }
+    
+    function updateButtonsState() {
+        leftBtn.disabled = startIndex === 0;
+        rightBtn.disabled = startIndex + cardsToShow >= cards.length;
+    }
+    
+    // Função para atualizar o contador de cards no formato mobile
+    function updateCardCounter() {
+        if (window.innerWidth <= 1154) {
+            cardCounter.textContent = `${startIndex + 1}/${cards.length}`;
         }
     }
-});
-
-leftBtn.addEventListener("click", () => {
-    if (window.innerWidth <= 1154) { // Se estiver em formato mobile
-        if (currentGroupIndex === 0) {
-            currentGroupIndex = cardsGroups.length - 1;
-        } else {
-            currentGroupIndex--;
+    
+    rightBtn.addEventListener("click", () => {
+        if (startIndex + cardsToShow < cards.length) {
+            startIndex += cardsToShow;
+            showCards();
         }
-        showCardGroup(currentGroupIndex);
-        updateButtonsState();
-    } else {
-        // Lógica para desktop
-        if (currentGroupIndex > 0) {
-            currentGroupIndex--;
-            showCardGroup(currentGroupIndex);
-            updateButtonsState();
+    });
+    
+    leftBtn.addEventListener("click", () => {
+        if (startIndex > 0) {
+            startIndex -= cardsToShow;
+            showCards();
         }
-    }
-});
-
-// Atualizar o estado inicial dos botões ao carregar a página
-updateButtonsState();
-
-
+    });
+    
+    // Atualizar os cards ao carregar a página
+    showCards();
 
 })();
