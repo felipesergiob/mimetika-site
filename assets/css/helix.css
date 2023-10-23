@@ -9,7 +9,7 @@
 
 #features-left-helix{
     left: -120px;
-    top: 25em;
+    top: 10em;
   }
   
   #features-right-helix{
@@ -56,12 +56,6 @@
 #card-area-right-helix {
     rotate: 30deg;
     right: -70px;
-}
-
-#card-area-bottom-helix{
-    rotate: 30deg;
-    bottom: 0;
-    left: -80px;
 }
 
 /*======================================

@@ -2377,12 +2377,23 @@ ol {
 
 #home img {
   max-height: 450px;
-  width: 300px;
+  max-width: 450px;
 }
 
 #home .img-fluid{
   margin-left: 80px;
 }
+
+
+@media screen and (max-width: 1200px) {
+  #home .custom-card{
+    width: 400px;
+  }
+  #home .img-fluid{
+    margin-left: 0;
+  }
+}
+
 
 @media screen and (max-width: 768px) {
   #home .img-fluid {
@@ -2399,13 +2410,13 @@ ol {
   }
 
   #home .custom-card .card-text ,  #home .custom-card .card-title{
-    font-size: 11px;
+    font-size: 16px;
   }
 }
 
-@media screen and (max-width: 300px){
+@media screen and (max-width: 500px){
   #home .custom-card .card-text ,  #home .custom-card .card-title{
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
