@@ -73,3 +73,9 @@
   top: -200px;
   rotate: -20deg;
 }
+
+@media screen and (max-width: 970px){
+  .background-helix{
+    display: none;
+  }
+}
