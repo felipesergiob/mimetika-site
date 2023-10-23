@@ -1,0 +1,161 @@
+/*======================================
+    Features Area CSS
+========================================*/
+.features {
+    background-color: #f9f9f9;
+  }
+  
+  .features .section-title {
+    margin-bottom: 30px;
+  }
+  
+  .features .section-title h3 {
+    font-size: x-large;
+    color: #0B68AB;
+  }
+  
+  .features .section-title h2 {
+    font-size: medium;
+    color: gray;
+    line-height: 1.5;
+  }
+  
+  .features .section-title-2 {
+   /* ajustar imagem para direita; */
+  }
+  
+  .features .section-title-2 h3 {
+    font-size: x-large;
+    color: #0B68AB;
+  }
+  
+  .features .section-title-2 h2 {
+    font-size: medium;
+    color: gray;
+    line-height: 1.5;
+    width: 50%;
+  }
+  
+  .features .single-feature {
+    text-align: left;
+    padding: 35px;
+    background-color: #0B68AB;
+    border-radius: 14px;
+    position: relative;
+    margin-top: 30px;
+    border: 1px solid #eee;
+    -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
+  }
+  
+  .features .single-feature:hover {
+    -webkit-box-shadow: 0px 3px 5px #00000017;
+            box-shadow: 0px 3px 5px #00000017;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  
+  .features .single-feature i {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    text-align: center;
+    display: inline-block;
+    background-color: #420947;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 7px;
+    -webkit-box-shadow: 0px 4px 6px #0000002a;
+            box-shadow: 0px 4px 6px #0000002a;
+    margin-bottom: 30px;
+  }
+  
+  .features .single-feature h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  
+  .features .single-feature p {
+    line-height: 22px;
+  }
+/*======================================
+    Features Card CSS
+========================================*/
+
+.feature-area-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.cards-feature{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 1em;
+    border-radius: 10px;
+    width: 230px;
+    height: 240px;
+    background-size: 100% auto;
+    transition: ease-in-out 0.4s;
+}
+
+.cards-feature h2,
+.cards-feature p{
+    color: #FFFFFF;
+}
+.text-description{
+    display: none;
+}
+
+
+.cards-feature:hover{
+    height: 355px;
+    justify-content: space-around;
+    transition: ease-in-out 0.7s;
+    .text{
+        display: none;
+    }
+    .text-description{
+        display: block;
+    }
+}
+
+
+#quem-somos-card1 {
+    background: linear-gradient(180deg, rgba(31, 164, 201, 0.8) 0%, rgba(22, 89, 134, 0.5) 100%), url(../images/hero-area-banner1.png);
+    position: relative;
+    background-size: cover; /* Adjust this value if needed */
+    background-position: center center; /* Center the background image both horizontally and vertically */
+}
+
+#quem-somos-card2{
+    background: linear-gradient(180deg, rgba(31, 164, 201, 0.8) 0%, rgba(22, 89, 134, 0.4) 100%), url(../images/hero-area-banner1.png);
+    position: relative;
+    background-size: cover; /* Adjust this value if needed */
+    background-position: center center; /* Center the background image both horizontally and vertically */
+}
+#quem-somos-card3{
+    background: linear-gradient(180deg, rgba(31, 164, 201, 0.8) 0%, rgba(22, 89, 134, 0.3) 100%), url(../images/hero-area-banner3.png);
+    position: relative;
+    background-size: cover; /* Adjust this value if needed */
+    background-position: center center; /* Center the background image both horizontally and vertically */
+}
+
+@media screen and (max-width: 779px){
+  .cards-feature{
+    width: 200px;
+  }
+
+  .cards-feature-p{
+    font-size: 14px !important;
+  }
+
+  .cards-feature-h2{
+    font-size: 18px !important;
+  }
+}

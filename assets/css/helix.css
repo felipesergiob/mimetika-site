@@ -1,0 +1,75 @@
+.background-helix{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+  }
+/*======================================
+    Features Helix CSS
+========================================*/
+
+#features-left-helix{
+    left: -120px;
+  }
+  
+  #features-right-helix{
+    rotate: 10deg;
+    height: auto;
+    right: -40px;
+    top: -140px;
+  }
+  
+  #features-right-helix{
+    bottom: 0;
+    z-index: 40;
+  }  
+
+/*======================================
+    informacoes Helix CSS
+========================================*/
+  
+  #informacoes-left-helix{
+    left: -150px;
+    top: 150px;
+  }
+
+  #informacoes-right-helix{
+    right: -90px;
+    top: -15px;
+  }
+
+/*======================================
+    card-area Helix CSS
+========================================*/
+
+.card-area-helix{
+  width: 420px;
+  height: 420px;
+}
+
+#card-area-left-helix {
+    rotate: 268deg;
+    left: -110px;
+    top: -170px;
+  }
+
+#card-area-right-helix {
+    rotate: 30deg;
+    right: -70px;
+}
+
+#card-area-bottom-helix{
+    rotate: 30deg;
+    bottom: 0;
+    left: -230px;
+}
+
+/*======================================
+    Criacao Helix CSS
+========================================*/
+
+#criacao-left-helix{
+  height: auto;
+  left: -150px;
+  top: -200px;
+  rotate: -20deg;
+}

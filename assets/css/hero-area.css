@@ -2,7 +2,7 @@
     display: flex;
     padding: 5em 0 3em 0;
     justify-content: space-evenly;
-    background-color: var(--azul-secundario);
+    background-color: #095A94;
     background-image: url(https://i.postimg.cc/zB1J68SY/TEXTURA.png);
     background-attachment: fixed;
     overflow-x: hidden;
@@ -37,77 +37,8 @@
 
 .btn-fale-conosco:hover{
     background-color: #FFFFFF;
-    color: #AFCA15;
+    color: #000000;
 }
-/*======================================
-   Start hero-area-cards
-========================================*/
-.hero-area-cards{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-}
-
-.cards-feature{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0 1em;
-    border-radius: 10px;
-    width: 230px;
-    height: 240px;
-    background-size: 100% auto;
-    transition: ease-in-out 0.4s;
-}
-
-.cards-feature h2,
-.cards-feature p{
-    color: #FFFFFF;
-}
-.text-description{
-    display: none;
-}
-
-
-.cards-feature:hover{
-    height: 355px;
-    justify-content: space-around;
-    transition: ease-in-out 0.4s;
-    .text{
-        display: none;
-    }
-    .text-description{
-        display: block;
-    }
-}
-
-
-#quem-somos-card1 {
-    background: linear-gradient(180deg, rgba(31, 164, 201, 0.8) 0%, rgba(22, 89, 134, 0.5) 100%), url(../images/hero-area-banner1.png);
-    position: relative;
-    background-size: cover; /* Adjust this value if needed */
-    background-position: center center; /* Center the background image both horizontally and vertically */
-}
-
-#quem-somos-card2{
-    background: linear-gradient(180deg, rgba(31, 164, 201, 0.8) 0%, rgba(22, 89, 134, 0.4) 100%), url(../images/hero-area-banner1.png);
-    position: relative;
-    background-size: cover; /* Adjust this value if needed */
-    background-position: center center; /* Center the background image both horizontally and vertically */
-}
-#quem-somos-card3{
-    background: linear-gradient(180deg, rgba(31, 164, 201, 0.8) 0%, rgba(22, 89, 134, 0.3) 100%), url(../images/hero-area-banner3.png);
-    position: relative;
-    background-size: cover; /* Adjust this value if needed */
-    background-position: center center; /* Center the background image both horizontally and vertically */
-}
-
-/*======================================
-   End hero-area-cards
-========================================*/
 
 @media screen and (max-width:1350px){
     .totem-hero-img{

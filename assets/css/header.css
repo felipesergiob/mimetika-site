@@ -9,12 +9,12 @@
     background-attachment: fixed;
 }
 
-
 .nav__imagem{
     cursor: pointer;
 }
 
 .nav__list li{  
+    color: #FFFFFF;
     display: inline-block;
     padding: 0 40px;
 }

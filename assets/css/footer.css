@@ -24,13 +24,21 @@ footer{
     color: #095A94;
 }
 
+.footer-ancora:hover{
+    color: #AFCA15;
+}
+
 @media screen and (max-width:913px){
     .footer-lista{
         display: none;
     }
 
-    .footer-informacoes p{
-    display: none;
+    .footer-informacoes {
+        display: none;
+    }
+
+    .footer-inside{
+        justify-content: center;
     }
     
 }

@@ -1,0 +1,124 @@
+/*=============================
+	criação e produçao CSS
+===============================*/
+
+
+
+.section-conteudos{
+    position: relative;
+}
+
+.informacoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .informacoes p{
+    font-size: 20px;
+    font-weight: 300;
+    max-width: 60ch;
+  }
+  
+  .informacoes__texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .conteudos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5em 0;
+  }
+  
+  .informacoes__texto h2{
+    color: #0C70B8;
+  }
+  
+  .totem-and-list{
+    display: flex;
+    align-items: center;
+  }
+  
+  .totem-img{
+    max-height: 20em;
+    margin: 0 5em;
+  
+  }
+  .customList {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding-bottom: 2em;
+  }
+  
+  .customListItem {
+    display: flex;
+    align-items: center;
+  }
+  
+  .customListItem img{
+    width: 2rem;
+    margin: 1em 1em;
+  }
+  
+  .h2-bar{
+    display: flex;
+    align-items: center;
+  }
+  
+  .h2-bar h2{
+    color: #AFCA15;
+    font-size: 32px;
+  }
+  
+  .customSeparator {
+    border: 4px solid #095A94; /* Removendo a borda padrão */
+    border-top: 2px solid #095A94; /* Adicionando uma borda superior azul */
+    width: 130%; /* Fazendo a linha ocupar toda a largura */
+    margin: 0; /* Removendo margens */
+    margin-left: 15px;
+  }
+  
+  .separatorWrapper {
+    flex-grow: 1; /* Permitindo que o wrapper da linha cresça e ocupe o espaço restante */
+    margin-left: 10px; /* Adicionando uma margem à esquerda para separar do título */
+  }
+  
+  
+  @media screen and (max-width:1000px){
+    .customSeparator{
+      display: none;
+    }
+  
+    .totem-img{
+      display: none;
+    }
+  
+    .customList{
+      margin-left: -1.8em;
+    }
+  
+    .conteudos{
+      align-items: start;
+    }
+  
+  }
+  
+  @media screen and (max-width:790px){
+    .customList{
+      margin-left: 0;
+    }
+  }
+  #informacoes-left-helix{
+    left: -150px;
+    top: 150px;
+  }
+
+  #informacoes-right-helix{
+    right: -90px;
+    top: -15px;
+  }
