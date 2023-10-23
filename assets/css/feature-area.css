@@ -192,7 +192,7 @@
 
   /* Assegurar que o título do card não apareça durante o hover no formato mobile */
   .cards-feature:hover .cards-feature-h2 {
-      display: none;
+     align-content: center;
   }
   
   .features-title h2{
