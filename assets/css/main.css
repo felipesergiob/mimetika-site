@@ -11,15 +11,15 @@
 @import url(feature-area.css);
 @import url(conteudos.css);
 @import url(helix.css);
-
+@import url(font-styles.css);
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Inter", sans-serif;
-  font-weight: normal;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
   font-style: normal;
   color: #888;
   overflow-x: hidden;
@@ -123,9 +123,9 @@ h4,
 h5,
 h6 {
   font-weight: 600;
+  font-size: 48px;
   margin: 0px;
-  color: #081828;
-  
+  color: white;
 }
 
 h1 a,
@@ -1030,36 +1030,19 @@ ol {
 .section-title {
   text-align: center;
   margin-bottom: 80px;
-  padding: 0 300px;
+  padding: 0 200px;
   position: relative;
   z-index: 5;
   
 }
 
-.section-title h3 {
-  font-size: 15px;
-  font-weight: 600;
-  display: block;
-  margin-bottom: 8px;
-  color: #420947;
-  text-transform: uppercase;
-  
-}
 
-.section-title h2 {
-  font-size: 32px;
-  margin-bottom: 5px;
-  line-height: 42px;
-  text-transform: capitalize;
-  position: relative;
-  font-weight: 800;
-  
-}
 
 .content-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; 
+  align-items: flex-start;
+  margin-top: 200px;
 }
 
 
@@ -2282,12 +2265,6 @@ ol {
   text-align: center;
 }
 
-#blog .section-title h2 {
-  font-size: medium;
-  color: gray;
-  line-height: 1.5;
-  text-align: center;
-}
 
 #blog .card-container-blog {
   display: flex;
@@ -2385,10 +2362,15 @@ ol {
 #home .custom-card .card-title,
 #home .custom-card .card-text {
   margin: 10px 0; /* Espaçamento uniforme entre o título e o texto */
+  font-weight: 500;
+  font-size: 1rem
 }
+
+
 
 #home .custom-card .card-title{
   color: #AFCA15;
+  font-size: 1.5rem;
 }
 
 
@@ -2399,11 +2381,6 @@ ol {
 
 #home .img-fluid{
   margin-left: 80px;
-}
-
-.hero-area-adjusted {
-  /* Arredonda apenas as bordas debaixo */
-  border-radius: 25px;
 }
 
 @media screen and (max-width: 768px) {
@@ -2427,6 +2404,8 @@ ol {
 
 .hero-area-adjusted{
   position: relative;
+  border-radius: 25px;
+  background:  url(https://i.postimg.cc/zB1J68SY/TEXTURA.png),linear-gradient(180deg, #095A94 79.57%, #000000 122.22%);
 }
 
 
@@ -2514,12 +2493,6 @@ ol {
   color: #0B68AB;
 }
 
-#contents .section-title h2 {
-  font-size: medium;
-  color: gray;
-  line-height: 1.5;
-
-}
 
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .blog-table .section-title {
@@ -2908,4 +2881,3 @@ ol {
 .pastel-green{
   border-radius: 50%;
 }
-

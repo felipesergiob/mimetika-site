@@ -8,33 +8,7 @@
   .features .section-title {
     margin-bottom: 30px;
   }
-  
-  .features .section-title h3 {
-    font-size: x-large;
-    color: #0B68AB;
-  }
-  
-  .features .section-title h2 {
-    font-size: medium;
-    color: gray;
-    line-height: 1.5;
-  }
-  
-  .features .section-title-2 {
-   /* ajustar imagem para direita; */
-  }
-  
-  .features .section-title-2 h3 {
-    font-size: x-large;
-    color: #0B68AB;
-  }
-  
-  .features .section-title-2 h2 {
-    font-size: medium;
-    color: gray;
-    line-height: 1.5;
-    width: 50%;
-  }
+
   
   .features .single-feature {
     text-align: left;
