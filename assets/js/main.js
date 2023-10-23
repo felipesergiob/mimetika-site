@@ -225,4 +225,25 @@ Author: GrayGrids
     // Atualizar os cards ao carregar a página
     showCards();
 
+    //cards quem somos
+    document.addEventListener('DOMContentLoaded', function() {
+        let currentCard = 0;
+        const cards = document.querySelectorAll('.cards-feature');
+        
+        // Defina o primeiro card como ativo
+        cards[0].classList.add('active-card');
+        
+        document.querySelector('.carousel-next').addEventListener('click', function() {
+            cards[currentCard].classList.remove('active-card');
+            currentCard = (currentCard + 1) % cards.length;
+            cards[currentCard].classList.add('active-card');
+        });
+        
+        document.querySelector('.carousel-prev').addEventListener('click', function() {
+            cards[currentCard].classList.remove('active-card');
+            currentCard = (currentCard - 1 + cards.length) % cards.length;
+            cards[currentCard].classList.add('active-card');
+        });
+    });    
+    
 })();
