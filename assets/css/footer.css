@@ -19,12 +19,13 @@ footer{
     padding-bottom: 2em;
 }
 
-.footer-informacoes p, a{
-    text-decoration: none;
+
+.footer-lista li a{
     color: #095A94;
 }
 
-.footer-ancora:hover{
+
+.footer-lista li a:hover{
     color: #AFCA15;
 }
 

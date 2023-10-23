@@ -2057,7 +2057,7 @@ ol {
   background: #095A94;
   background:  url(https://i.postimg.cc/zB1J68SY/TEXTURA.png),linear-gradient(180deg, #095A94 79.57%, #000000 122.22%);
   background-size: auto;
-  height: 120vh;
+  height: 1000px;
   border-radius: 25px;
 }
 
@@ -2068,6 +2068,7 @@ ol {
   color: white;
   font-size: 2em;
   z-index: 1; /* Garante que o título apareça em cima */
+  font-size: 3.5em;
 }
 
 .nav-btn {
