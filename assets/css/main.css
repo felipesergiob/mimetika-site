@@ -2377,7 +2377,7 @@ ol {
 
 #home img {
   max-height: 450px;
-  max-width: 450px;
+  /* max-width: 450px; */
 }
 
 #home .img-fluid{
