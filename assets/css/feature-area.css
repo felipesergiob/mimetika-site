@@ -99,14 +99,16 @@
 }
 
 #quem-somos-card1 {
-  background: linear-gradient(180deg, rgba(31, 164, 201, 0.8) 0%, rgba(22, 89, 134, 0.5) 100%), url(../images/hero-area-banner1.png);
+  background: linear-gradient(180deg, rgba(31, 164, 201, 0.8) 0%, rgba(22, 89, 134, 0.3) 100%), url(../images/hero-area-banner1.png);
+  justify-content: center;
+  align-items: center;
   position: relative;
   background-size: cover;
   background-position: center center;
 }
 
 #quem-somos-card2 {
-  background: linear-gradient(180deg, rgba(31, 164, 201, 0.8) 0%, rgba(22, 89, 134, 0.4) 100%), url(../images/hero-area-banner1.png);
+  background: linear-gradient(180deg, rgba(31, 164, 201, 0.8) 0%, rgba(22, 89, 134, 0.3) 100%), url(../images/hero-area-banner1.png);
   position: relative;
   background-size: cover;
   background-position: center center;
@@ -121,7 +123,7 @@
 
 @media screen and (max-width: 779px) {
   .cards-feature {
-      width: 240px;
+    width: 240px;
   }
 
   .cards-feature-p {
@@ -192,7 +194,7 @@
   .cards-feature:hover .cards-feature-h2 {
       display: none;
   }
-
+  
   .features-title h2{
     font-size: 36px !important  ;
   }
@@ -213,7 +215,7 @@
 }
 
 #quem-somos + p {
-    font-size: 14px;
+  font-size: 14px;
 }
 }
 
