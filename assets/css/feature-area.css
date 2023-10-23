@@ -100,8 +100,6 @@
 
 #quem-somos-card1 {
   background: linear-gradient(180deg, rgba(31, 164, 201, 0.8) 0%, rgba(22, 89, 134, 0.3) 100%), url(../images/hero-area-banner1.png);
-  justify-content: center;
-  align-items: center;
   position: relative;
   background-size: cover;
   background-position: center center;
@@ -133,6 +131,12 @@
 
   .cards-feature-h2 {
       font-size: 18px !important;
+  }
+
+  .cards-feature-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30%;
   }
 }
 
