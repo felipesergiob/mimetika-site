@@ -5,7 +5,7 @@
 .features-title h2,
 .features-title-2 h2{
     color: #0C70B8 !important;
-    font-size: 48px !important;
+    font-size: 48px;
     margin-bottom: 1.3rem !important;
 }
 
@@ -17,5 +17,16 @@
 }
 
 .features-title-2 p{
-    width: 50ch;
+    max-width: 50ch;
+}
+
+@media screen and (max-width: 1000px ) {
+    .features-title-2 p{
+        font-size: 16px;
+    }
+
+    .features-title h2, .features-title-2 h2 {
+        font-size: 36px;
+    }
+
 }

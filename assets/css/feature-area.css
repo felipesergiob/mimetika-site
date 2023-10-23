@@ -174,24 +174,29 @@
       align-items: center;
   }
 
-  .cards-feature {
-    width: 70%;
-    display: none; /* Esconda todos os cards por padrão em telas menores */
-}
+    .cards-feature {
+      width: 70%;
+      display: none; /* Esconda todos os cards por padrão em telas menores */
+  }
 
-.cards-feature.active-card {
-    display: block; /* Mostre o card que possui a classe .active-card */
-}
+  .cards-feature.active-card {
+      display: block; /* Mostre o card que possui a classe .active-card */
+  }
 
-/* Mostre os botões no mobile */
-.carousel-btn {
-    display: flex; /* Mostra os botões em telas menores */
-}
+  /* Mostre os botões no mobile */
+  .carousel-btn {
+      display: flex; /* Mostra os botões em telas menores */
+  }
 
-/* Assegurar que o título do card não apareça durante o hover no formato mobile */
-.cards-feature:hover .cards-feature-h2 {
-    display: none;
-}
+  /* Assegurar que o título do card não apareça durante o hover no formato mobile */
+  .cards-feature:hover .cards-feature-h2 {
+      display: none;
+  }
+
+  .features-title h2{
+    font-size: 36px !important  ;
+  }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -211,3 +216,4 @@
     font-size: 14px;
 }
 }
+
