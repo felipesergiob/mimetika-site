@@ -2398,7 +2398,19 @@ ol {
   }
 
   #home .custom-card .card-text ,  #home .custom-card .card-title{
-    font-size: 12px;
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 300px){
+  #home .custom-card .card-text ,  #home .custom-card .card-title{
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 275px){
+  #home .custom-card .card-text ,  #home .custom-card .card-title{
+    font-size: 8px;
   }
 }
 
