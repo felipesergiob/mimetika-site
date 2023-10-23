@@ -2080,7 +2080,7 @@ ol {
 
 .main-title {
   position: absolute;
-  top: 5%;
+  top: 3%;
   left: 20%; /* Ajustado para mover o título para a esquerda */
   color: white;
   font-size: 2em;
@@ -2209,8 +2209,7 @@ ol {
       top: 10%;
       left: 50%;
       transform: translateX(-50%);
-      font-size: 1.5em; /* Diminuindo o tamanho da fonte */
-      font-size: 1.3em;
+      font-size: 1.2em;
   }
 
   .nav-btn {
@@ -2220,11 +2219,11 @@ ol {
   }
 
   .left-btn {
-      left: 5%;
+      left: 2%;
   }
 
   .right-btn {
-      right: 5%;
+      right: 2%;
   }
 
   .cards-container {
@@ -2248,18 +2247,6 @@ ol {
   }
 }
 
-
-/* .card-counter {
-  display: none; 
-  position: absolute;
-  bottom: 2%;
-  left: 50%;
-  transform: translateX(-50%);
-  color: gray;
-  font-size: 1.5em;
-  z-index: 1;
-} */
-
 /* Por padrão, o contador estará oculto */
 .card-counter {
   display: none;
@@ -2271,11 +2258,11 @@ ol {
   .card-counter {
     display: block;
     position: absolute;
-    bottom: 10%;  /* Posicionado abaixo do card */
+    bottom: 6%;  /* Posicionado abaixo do card */
     left: 50%;
     transform: translateX(-50%);
-    color: gray;
-    font-size: 1.5em;
+    color: white;
+    font-size: 1;
     z-index: 2; /* Garante que o contador apareça acima de outros elementos */
   }
 }
@@ -2434,7 +2421,7 @@ ol {
   }
 
   #home .custom-card .card-text ,  #home .custom-card .card-title{
-    font-size: smaller;
+    font-size: 12px;
   }
 }
 
