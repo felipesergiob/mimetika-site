@@ -2055,7 +2055,7 @@ ol {
   position: relative;
   padding: 20px 0 0px 0;
   background: #095A94;
-  background-image: url(https://i.postimg.cc/zB1J68SY/TEXTURA.png);
+  background:  url(https://i.postimg.cc/zB1J68SY/TEXTURA.png),linear-gradient(180deg, #095A94 79.57%, #000000 122.22%);
   background-size: auto;
   height: 120vh;
   border-radius: 25px;
