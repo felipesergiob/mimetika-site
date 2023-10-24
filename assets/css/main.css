@@ -2452,7 +2452,7 @@ ol {
 }
 
 /* Isso define uma largura máxima para o card em telas entre 991px e 769px */
-@media screen and (min-width: 769px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   #home .custom-card {
     width: 250px;
   }
@@ -2461,6 +2461,13 @@ ol {
     font-size: x-small;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .row.align-items-start{
+    flex-direction: row;
+  }
+}
+
 /*======================================
     Our Achievement CSS
 ========================================*/
