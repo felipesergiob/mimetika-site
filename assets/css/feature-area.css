@@ -95,28 +95,37 @@
   }
   .text-description {
       display: block;
+      font-size: 12px;
+      margin-left: 10px;
+      margin-right: 10px;
   }
 }
 
 #quem-somos-card1 {
-  background: linear-gradient(180deg, rgba(31, 164, 201, 0.8) 0%, rgba(22, 89, 134, 0.3) 100%), url(../images/hero-area-banner1.png);
+  background: linear-gradient(180deg, rgba(31, 164, 201, 0.8) 0%, rgba(22, 89, 134, 1) 100%);
   position: relative;
   background-size: cover;
   background-position: center center;
 }
 
 #quem-somos-card2 {
-  background: linear-gradient(180deg, rgba(31, 164, 201, 0.8) 0%, rgba(22, 89, 134, 0.3) 100%), url(../images/hero-area-banner1.png);
+  background: linear-gradient(180deg, rgba(31, 164, 201, 0.8) 0%, rgba(22, 89, 134, 1) 100%);
   position: relative;
   background-size: cover;
   background-position: center center;
 }
 
 #quem-somos-card3 {
-  background: linear-gradient(180deg, rgba(31, 164, 201, 0.8) 0%, rgba(22, 89, 134, 0.3) 100%), url(../images/hero-area-banner3.png);
+  background: linear-gradient(180deg, rgba(31, 164, 201, 0.8) 0%, rgba(22, 89, 134, 1) 100%);
   position: relative;
   background-size: cover;
   background-position: center center;
+}
+
+@media (max-width: 991px) and (min-width: 780px) {
+  .cards-feature:hover .text-description {
+      font-size: 8px;
+  }
 }
 
 @media screen and (max-width: 779px) {
@@ -125,18 +134,18 @@
   }
 
   .cards-feature-p {
-      font-size: 14px !important;
+      font-size: 12px !important;
       margin: 0 2px;
   }
 
   .cards-feature-h2 {
-      font-size: 18px !important;
+      font-size: 14px !important;
   }
 
   .cards-feature-content{
     display: flex;
     flex-direction: column;
-    margin-top: 30%;
+    margin-top: 10%;
   }
 }
 
@@ -197,6 +206,7 @@
   /* Assegurar que o título do card não apareça durante o hover no formato mobile */
   .cards-feature:hover .cards-feature-h2 {
      align-content: center;
+     margin-bottom: 40px;
   }
   
   .features-title h2{

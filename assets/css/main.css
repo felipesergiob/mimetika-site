@@ -2039,7 +2039,7 @@ ol {
 
 .features .title {
   font-size: 24px;
-  margin: 0;
+  margin: 30px;
 }
 
 .features .text {
@@ -2420,7 +2420,7 @@ ol {
   }
 }
 
-@media screen and (max-width: 275px){
+@media screen and (max-width: 297px){
   #home .custom-card .card-text ,  #home .custom-card .card-title{
     font-size: 8px;
   }
@@ -2440,7 +2440,27 @@ ol {
   }
 }
 
+/* Isso define uma largura máxima para o card em telas entre 1200px e 992px */
+@media screen and (min-width: 992px) and (max-width: 1000px) {
+  #home .custom-card {
+    width: 250px;
+  }
 
+  #home .custom-card .card-title, #home .custom-card .card-text{
+    font-size: x-small;
+  }
+}
+
+/* Isso define uma largura máxima para o card em telas entre 991px e 769px */
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  #home .custom-card {
+    width: 250px;
+  }
+
+  #home .custom-card .card-title, #home .custom-card .card-text{
+    font-size: x-small;
+  }
+}
 /*======================================
     Our Achievement CSS
 ========================================*/
