@@ -87,7 +87,7 @@
 }
 
 .cards-feature:hover {
-  height: 405px;
+  height: 395px;
   justify-content: space-around;
   transition: ease-in-out 0.7s;
   .text {
@@ -131,6 +131,16 @@
 @media screen and (max-width: 779px) {
   .cards-feature {
     width: 240px;
+    height: 395px;
+    .text {
+      display: none;
+  }
+  .text-description {
+      display: block;
+      font-size: 12px;
+      margin-left: 10px;
+      margin-right: 10px;
+  }
   }
 
   .cards-feature-p {
@@ -204,7 +214,7 @@
   }
 
   /* Assegurar que o título do card não apareça durante o hover no formato mobile */
-  .cards-feature:hover .cards-feature-h2 {
+  .cards-feature-h2 {
      align-content: center;
      margin-bottom: 40px;
   }
