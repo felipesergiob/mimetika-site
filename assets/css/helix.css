@@ -9,7 +9,7 @@
 
 #features-left-helix{
     left: -120px;
-    top: 10em;
+
   }
   
   #features-right-helix{
@@ -29,13 +29,13 @@
 ========================================*/
   
   #informacoes-left-helix{
-    left: -150px;
-    top: 150px;
+    left: -211px;
+    top: 90px;
   }
 
   #informacoes-right-helix{
     right: -90px;
-    top: -15px;
+    top: -85px;
   }
 
 /*======================================

@@ -1061,7 +1061,6 @@ ol {
 }
 
 .section-title-2 {
-  margin-top: calc(140px - 0px); /* Distância em cima, onde X é a quantidade que você deseja aproximar */
   margin-bottom: 100px; /* Distância embaixo */
   margin-left: 20px; /* Margem à esquerda */
   margin-right: 20px; /* Margem à direita */
@@ -1130,6 +1129,7 @@ ol {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 18px;
+    margin-top: 50px;
   }
   .section-title p {
     font-size: 14px;
@@ -2063,7 +2063,7 @@ ol {
 
 .main-title {
   position: absolute;
-  top: 3%;
+  top: 10%;
   left: 20%; /* Ajustado para mover o título para a esquerda */
   color: white;
   font-size: 2em;
