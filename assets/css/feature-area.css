@@ -133,7 +133,7 @@
     width: 240px;
     height: 395px;
     .text {
-      display: none;
+      display: none !important;
   }
   .text-description {
       display: block;
