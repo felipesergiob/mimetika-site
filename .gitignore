@@ -1,0 +1,35 @@
+# Arquivos CSS - removendo para reduzir tamanho do repositório
+*.css
+assets/css/
+
+# Arquivos de build e dependências
+node_modules/
+dist/
+build/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Arquivos temporários
+*.tmp
+*.temp
+
+# Arquivos de cache
+.cache/
+.parcel-cache/
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.production 
